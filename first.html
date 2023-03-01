@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .main {
+        background-color: black;
+        height: 780px;
+        width: 100%;
+        position: absolute;
+      }
+
+      .a {
+        position: absolute;
+        background-image: url("ss.png");
+        height: 780px;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: 100% 780px;
+        opacity: 0.4;
+      }
+
+      .b {
+        background-image: linear-gradient(#33ff99, #99ffff, #ff6699);
+        height: 550px;
+        width: 450px;
+        position: absolute;
+        margin-top: 150px;
+        margin-left: 550px;
+        text-align: center;
+        border-radius: 4px;
+      }
+
+      body {
+        font-family: cursive;
+      }
+
+      input {
+        border: none;
+        background-color: transparent;
+        border-bottom: 2px solid #ff6699;
+        border-right: 2px solid #ff6699;
+      }
+
+      .c {
+        font-size: 100px;
+        position: absolute;
+        color: black;
+        margin-top: 100px;
+        margin-left: 950px;
+        rotate: 45deg;
+        cursor: pointer;
+        display: none;
+      }
+
+      .c a {
+        text-decoration: none;
+        color: black;
+      }
+
+      button {
+        background-color: orangered;
+        height: 40px;
+        width: 150px;
+        border: none;
+        margin-top: 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+
+      .d {
+        position: absolute;
+        color: red;
+        margin-top: 570px;
+        height: 200px;
+        width: 350px;
+        font-size: small;
+        margin-left: 610px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="main">
+      <div class="a"></div>
+    </div>
+    <div class="b">
+      <form action="./includes/db.php" method="post">
+        <br /><br />
+        <h1>Enquiry Form</h1>
+        <br /><br />
+        Name :-<input type="text" name="name" required />
+        <font color="red"> *</font><br /><br />
+        E-mail:- <input type="email" name="email" required />
+        <font color="red"> *</font><br /><br />
+        Mobile:- <input type="number" name="mobile" required />
+        <font color="red"> *</font><br /><br />
+        <a href="index.html"
+          ><button name="submit" value="submit" onclick="a()">Submit</button></a
+        >
+      </form>
+    </div>
+    <!-- <div class="c" id="any"><a href="index.html">+</a></div> -->
+    <div class="d">
+      *Complete this Enquiry Form to obtain additional information about our
+      services We will analze your enquiry form and return to you shortly by
+      email or phone.<br />
+      <center>Dot Code Edification!!</center>
+    </div>
+    <script>
+      function a() {
+        alert("Your data has been fetched by<br> Dot Code Edification!!");
+        document.getElementById("any").style.display = "inline-block";
+      }
+    </script>
+  </body>
+</html>
