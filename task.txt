@@ -1,0 +1,5 @@
+Header Sticky
+Responsive
+Courses - CARDS
+Google Maps Integration
+Testimonial Cards
