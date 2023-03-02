@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+      }
+      .main {
+        display: inline-block;
+        height: 780px;
+        width: 100%;
+        font-family: cursive;
+      }
+      .img img {
+        height: 780px;
+        width: 100%;
+      }
+      h1 {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 50px;
+      }
+      .contact-form {
+        position: absolute;
+        height: 690px;
+        width: 750px;
+        margin-left: 390px;
+        margin-top: -740px;
+        background-color: transparent;
+        box-shadow: 0 0 10px black;
+        border-radius: 7px;
+      }
+      form {
+        margin-left: 170px;
+        margin-top: 30px;
+      }
+      input {
+        background-color: black;
+        border: 3px solid rgb(255, 215, 0);
+        color: white;
+        padding: 2px;
+        margin: 8px;
+        width: 300px;
+      }
+      textarea {
+        background-color: black;
+        color: white;
+        border: 3px solid rgb(255, 215, 0);
+        margin-left: 80px;
+      }
+      button {
+        text-align: center;
+        background-color: black;
+        color: rgb(255, 215, 0);
+        height: 40px;
+        width: 80px;
+        border-radius: 2px;
+        margin-top: 30px;
+        margin-left: 150px;
+      }
+      p {
+        font-size: small;
+        margin-top: 10px;
+      }
+      .image-logo img {
+        height: 200px;
+        width: 750px;
+        margin-top: 10px;
+        position: absolute;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main">
+      <div class="img">
+        <img src="./includes/img/bg.jpg" />
+      </div>
+      <div class="contact-form">
+        <h1>Contact US</h1>
+        <div class="image-logo">
+          <img src="./includes/img/logo.jpg" alt="logo" />
+        </div>
+        <br /><br /><br /><br /><br /><br /><br />
+        <form action="contact.php" method="post">
+          Name:-
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+          /><br />
+          Email:-
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Email"
+            required
+          /><br />
+          Message:- <br />
+          <textarea
+            name="message"
+            rows="4"
+            cols="30"
+            placeholder="Text.."
+            required
+          ></textarea
+          ><br />
+          <button name="submit" value="submit">Submit</button>
+          <p>
+            <b>
+              It's very important for us to keep in touch with you.<br />
+              So we are always ready to answer any question.
+            </b>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
