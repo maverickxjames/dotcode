@@ -1,12 +1,12 @@
 <?php
 $name=$_POST['name'];
 $password=$_POST['password'];
-$con=new mysqli("localhost","root","","dott");
+$con=new mysqli("localhost","root","","dotcode");
 if($con->connect_error){
     die("Failed to connect :".$con->connect_error);
 }
 else{
-    $stmt=$con->prepare("select * from coder where name=?");
+    $stmt=$con->prepare("select * from admins where name=?");
     $stmt->bind_param("s",$name);
     $stmt->execute();
     $stmt_result = $stmt->get_result();
