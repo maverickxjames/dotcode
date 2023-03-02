@@ -171,8 +171,7 @@
     }
 }
 .h{
-    margin-top: -600px;
-    margin-left: 750px;
+    text-align: center;
 }
 .i{
     background-color:rgb(201, 230, 245);
@@ -180,16 +179,9 @@
     width:100%;
     margin-top: 534px;
 }
-.j{
-    position: absolute;
-    height:380px;
-    width:900px;
-    color:white;
-    background-color: rgb(17, 78, 108);
-    margin-top: -680px;
-    margin-left: 500px;
-    display: inline-block;
-}
+
+
+
 .j1{
     text-align: center;
     font-size: 30px;
