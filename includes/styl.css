@@ -622,6 +622,80 @@ background: rgb(0,0,0);
 background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,18,1) 35%, rgba(41,63,68,1) 100%);
 }
 
+
+.course-card,
+.testimonial-card{
+  display: flex;
+  flex-direction: row;
+  padding-top: 30px;
+  text-align: center;
+}
+
+
+h2{
+  text-align: center;
+  margin: 10px 0;
+}
+.course-card ul li{
+  margin: 3px 0;
+  list-style: none;
+  height: 40px;
+  background: #a79f9f;
+  color: #000;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.testimonial-card ul li{
+  margin: 3px 0;
+  list-style: none;
+  height: 40px;
+  background: #a79f9f;
+  color: #000;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.course-card ul li:nth-child(1){
+  background: white;
+  margin-bottom: 10px;
+}
+
+.card-body{
+  background: rgb(0,0,0);
+/* backg round: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,18,1) 35%, rgba(41,63,68,1) 100%); */
+  margin: 4px;
+  border-radius: 20px;
+}
+
+.card-body img{
+  width: 100%;
+  height: 210px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
+.t-card-body{
+  background: rgb(0,0,0);
+  width: 33%;
+/* backg round: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(1,1,18,1) 35%, rgba(41,63,68,1) 100%); */
+  margin: 4px;
+  border-radius: 20px;
+}
+
+.t-card-body img{
+  margin-top: 10px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-bottom: 14px;
+}
+
+.heading-para{
+  margin-top: 10px;
+  color: white;
+}
+
+
+
 @media screen and (max-width: 1250px){
   
 }
@@ -655,6 +729,26 @@ h1{
 .contact-msg{
   font-size: 1.2rem;
 }
+
+.course-card{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.testimonial-card{
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  text-align: center;
+}
+
+.t-card-body{
+  width: 100%;
+}
+
+
 }
 
 
