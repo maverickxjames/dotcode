@@ -1,7 +1,9 @@
 <?php 
 session_start();
-if($_SESSION['isAdminLoggedIn'] == "true"){
-  header('Location:./dotcode_admin/');
+if(isset($_SESSION['isAdminLoggedIn'])){
+  if($_SESSION['isAdminLoggedIn'] == "true"){
+    header('Location:./dotcode_admin/');
+  }
 }
 
 // hjhj
