@@ -595,7 +595,7 @@ h1 {
 .img-width {
   width: 400px;
 }
-
+/* hfjdhjds */
 .contact-btn {
   width: fit-content;
   padding: 10px;
@@ -701,6 +701,12 @@ h2 {
 .heading-para {
   margin-top: 10px;
   color: white;
+}
+
+.logout {
+  position: absolute;
+  top: 40px;
+  left: 90%;
 }
 
 @media screen and (max-width: 1250px) {

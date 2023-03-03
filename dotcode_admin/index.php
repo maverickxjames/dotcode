@@ -19,30 +19,31 @@ $admin = mysqli_fetch_assoc($con);
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../includes/styl.css">
     <!-- <link href="https://cdn.datatables.net/1.13.3/css/jquery.dataTables.css"> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 </head>
 
 <body>
-    <br><br>
-    <hr>
+    
+    <br>
     <h1 style="text-align: center;">Welcome
         <?= $admin['name'] ?>
     </h1>
-    <button onclick="window.location.href='logout.php'">Logout</button><br>
+    <button class="btn btn-danger logout" onclick="window.location.href='logout.php'">Logout</button><br>
     <table class="table">
         <thead class="thead-light">
             <tr>
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
-                <th scope="col">Time</th>
+                <th scope="col">Message</th>
             </tr>
         </thead>
         <tbody>
             <?php 
-            $q = "SELECT * FROM admins";
+            $q = "SELECT * FROM contact_message";
             $con = mysqli_query($conn, $q);
             // $admin = mysqli_fetch_assoc($con);
             $count = 1;
@@ -52,7 +53,7 @@ $admin = mysqli_fetch_assoc($con);
                 <th scope="row"><?=$count ?></th>
                 <td><?=$adminDetails['name'] ?> </td>
                 <td><?=$adminDetails['email'] ?></td>
-                <td><?=$adminDetails['created_at'] ?></td>
+                <td><?=$adminDetails['msg'] ?></td>
             </tr>
                 <?php
                 $count++;
