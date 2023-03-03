@@ -595,7 +595,7 @@ h1 {
 .img-width {
   width: 400px;
 }
-/* hfjdhjds */
+
 .contact-btn {
   width: fit-content;
   padding: 10px;
@@ -620,6 +620,7 @@ h1 {
   color: white;
   text-decoration: none;
 }
+
 .card {
   width: 100%;
   margin: 10px 0;
@@ -702,6 +703,7 @@ h2 {
   margin-top: 10px;
   color: white;
 }
+
 
 .logout {
   position: absolute;

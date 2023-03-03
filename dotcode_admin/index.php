@@ -38,12 +38,16 @@ $admin = mysqli_fetch_assoc($con);
                 <th scope="col">#</th>
                 <th scope="col">Name</th>
                 <th scope="col">Email</th>
+
                 <th scope="col">Message</th>
+
             </tr>
         </thead>
         <tbody>
             <?php 
+
             $q = "SELECT * FROM contact_message";
+
             $con = mysqli_query($conn, $q);
             // $admin = mysqli_fetch_assoc($con);
             $count = 1;
@@ -53,6 +57,8 @@ $admin = mysqli_fetch_assoc($con);
                 <th scope="row"><?=$count ?></th>
                 <td><?=$adminDetails['name'] ?> </td>
                 <td><?=$adminDetails['email'] ?></td>
+
+
                 <td><?=$adminDetails['msg'] ?></td>
             </tr>
                 <?php
